@@ -1,0 +1,44 @@
+﻿<krpano version="1.21" title="">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="skin/customskin.xml" />
+	
+
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	
+	<scene name="scene_01679010_Airpano_Inside_Bromo_Volcano" title="브로모 화산" onstart="" thumburl="panos/01679010_Airpano_Inside_Bromo_Volcano.tiles/thumb.jpg" lat="-7.94257222" lng="112.95308889" alt="0.00" heading="0.0">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="3.621" vlookat="68.171" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01679010_Airpano_Inside_Bromo_Volcano.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/01679010_Airpano_Inside_Bromo_Volcano.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2304,4608" />
+		</image>
+		
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-24.848" atv="73.611" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="브로모 화산 " ath="60.800" atv="-1" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
+
+
+	</scene>
+
+
+</krpano>
