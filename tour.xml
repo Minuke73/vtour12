@@ -34,10 +34,10 @@
 			<cube url="panos/01679010_Airpano_Inside_Bromo_Volcano.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2304,4608" />
 		</image>
 		
-		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-24.848" atv="73.611" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
-		<hotspot name="text" style="custom_hotspotext"  html="브로모 화산 " ath="-17" atv="68" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
-		<hotspot type="image" scale="1" enabled="false" name="바톡" url="skin/arrow2.png" distorted="false" zoom="false" ath="-2.397" atv="-2.317"/>
-		<hotspot type="image" scale="1" enabled="false" name="스메르" url="skin/arrow1.png" distorted="false" zoom="false" ath="-135.425" atv="-8.229"/>
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="-24.848" atv="73.611" distorted="false" zoom="true" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="브로모 화산 " ath="-17" atv="68" distorted="false" zoom="true" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot type="image" scale="1" enabled="false" name="바톡" url="skin/arrow2.png" distorted="false" zoom="true" ath="-2.397" atv="-1.317"/>
+		<hotspot type="image" scale="1" enabled="false" name="스메르" url="skin/arrow1.png" distorted="false" zoom="true" ath="-136.425" atv="-6.500"/>
 
 	</scene>
 
